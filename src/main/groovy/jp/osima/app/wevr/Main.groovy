@@ -57,7 +57,7 @@ class Main {
             println vecWord.word
             //println vecWord.vector
 
-            // 類似度の高い10件の単語を列挙
+            // List up top 10 similarity words.
             Map<String, Double> map = [:]
             wordDictionary.forEach( new VecWordResult(){
                 void call(VecWord myVecWord){
