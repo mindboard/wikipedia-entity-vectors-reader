@@ -14,7 +14,7 @@ And then do gradle command below:
 ./gradlew -Pargs="jawiki.word_vectors.100d.txt.gz スターバックス"
 ```
 
-As a result :
+As a result:
 
 ```
 > Task :run
@@ -31,3 +31,4 @@ As a result :
 - ザ・テラス (score: 0.7272931343526212)
 ```
 
+It is listed up top 10 similarity words with the word スターバックス.
