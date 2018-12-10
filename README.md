@@ -8,13 +8,13 @@ This is a tool for reading the release data of [Wikipedia Entity Vectors](https:
 
 Before use this tool, you should download [Wikipedia Entity Vectors release data](https://github.com/singletongue/WikiEntVec/releases) such as jawiki.word\_vectors.100d.txt.gz and copy into this project home directory.
 
-And then do gradle command below:
+And then do gradle command as follows:
 
 ```
 ./gradlew -Pargs="jawiki.word_vectors.100d.txt.gz スターバックス"
 ```
 
-As a result:
+Result:
 
 ```
 > Task :run
@@ -31,4 +31,4 @@ As a result:
 - ザ・テラス (score: 0.7272931343526212)
 ```
 
-It is listed up top 10 similarity words with the word スターバックス.
+It's top 10 similarity words with the word スターバックス.
