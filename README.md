@@ -6,9 +6,9 @@ This is a tool for reading the release data of [Wikipedia Entity Vectors](https:
 
 ## Usage
 
-Before use this tool, you should download [Wikipedia Entity Vectors release data](https://github.com/singletongue/WikiEntVec/releases) such as jawiki.word_vectors.100d.txt.gz and copy into this project home directory.
+Before use this tool, you should download [Wikipedia Entity Vectors release data](https://github.com/singletongue/WikiEntVec/releases) such as jawiki.word\_vectors.100d.txt.gz and copy into this project home directory.
 
-And then peform below:
+And then do gradle command below:
 
 ```
 ./gradlew -Pargs="jawiki.word_vectors.100d.txt.gz スターバックス"
