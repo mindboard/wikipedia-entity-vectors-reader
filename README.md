@@ -1,7 +1,7 @@
 
-# wikipedia-entity-vectors-reader
+# Wikipedia Entity Vectors Reader
 
-This is tool for reading the release data of [Wikipedia Entity Vectors](https://github.com/singletongue/WikiEntVec).
+This is a tool for reading the release data of [Wikipedia Entity Vectors](https://github.com/singletongue/WikiEntVec).
 
 
 ## Usage
