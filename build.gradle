@@ -2,18 +2,33 @@ defaultTasks 'run'
 
 apply plugin: 'application'
 apply plugin: 'groovy'
+apply plugin: 'maven-publish'
 apply plugin: 'maven'
 
-mainClassName = "jp.osima.app.wevr.Main"
+mainClassName = "jp.osima.app.ml.wevr.Main"
 run {
     if (project.hasProperty('args')) {
         args project.args.split('\\s+')
     }
 }
 
+jar.baseName = 'wevr'
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId 'jp.osima.app.ml'
+            artifactId 'wevr'
+            version '0.1.0-SNAPSHOT'
+
+            from components.java
+        }
+    }
+}
+
 dependencies {
-    compile 'org.codehaus.groovy:groovy:2.4.13'
-    compile 'org.codehaus.groovy:groovy-json:2.4.13'
+    compile 'org.codehaus.groovy:groovy:2.5.4'
+    compile 'org.codehaus.groovy:groovy-json:2.5.4'
 
     compile 'org.mapdb:mapdb:3.0.5'
 

@@ -1,4 +1,4 @@
-package jp.osima.app.wevr
+package jp.osima.app.ml.wevr
 
 import java.util.zip.GZIPInputStream
 
