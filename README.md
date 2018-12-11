@@ -63,5 +63,6 @@ if( wordDictionary!=null ){
 ```
 
 You can get __iPhone__ and __Android__ vector values.
-Do not forget copy the file jawiki.word\_vectors.100d.txt.gz in the same directory.
+
+Before performing this groovy script, don't forget copy the file __jawiki.word\_vectors.100d.txt.gz__ in the same directory.
 
