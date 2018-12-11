@@ -11,24 +11,23 @@ Before use this tool, you should download [Wikipedia Entity Vectors release data
 And then do gradle command as follows:
 
 ```
-./gradlew -Pargs="jawiki.word_vectors.100d.txt.gz スターバックス"
+./gradlew -Pargs="jawiki.word_vectors.100d.txt.gz iPhone"
 ```
 
 Result:
 
 ```
-> Task :run
-スターバックス
-- ケンタッキーフライドチキン (score: 0.7516587756941022)
-- ハーゲンダッツ (score: 0.7492512830135285)
-- ベルギービール (score: 0.7397523992289845)
-- かごの屋 (score: 0.7360437281277835)
-- セブンイレブン (score: 0.7358147931637159)
-- ファミリーマート (score: 0.7334104630379378)
-- ミスタードーナツ (score: 0.7320779172546913)
-- カレーハウス (score: 0.7318742846601766)
-- バーガーキング (score: 0.7272940610164202)
-- ザ・テラス (score: 0.7272931343526212)
+iPhone
+- iPad (score: 0.9539793718222197)
+- Android (score: 0.9265376298574367)
+- iOS (score: 0.8722529433633629)
+- スマートフォン (score: 0.8578014917024938)
+- iPod (score: 0.856802839072025)
+- アプリ (score: 0.8551785318649682)
+- 専用アプリ (score: 0.8394270126646978)
+- iPhoneアプリ (score: 0.8356653257510369)
+- スマホ (score: 0.8261666818231069)
+- AppStore (score: 0.8226029096545175)
 ```
 
-It's top 10 similarity words with the word スターバックス.
+It's top 10 similarity words with the word __iPhone__.
