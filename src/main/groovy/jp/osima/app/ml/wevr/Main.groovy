@@ -11,12 +11,12 @@ class Main {
             def invalid = ( !CACHE_FILE.exists() && !gzippedVectorsTxtFile.exists() )
             if( invalid ){
                 println 'vector file not found.'
-                System.exit()
+                System.exit(0)
             }
 
             def wordDictionary = WordDictionaryFactory.createWordDictionary(gzippedVectorsTxtFile, CACHE_FILE)
             if( wordDictionary==null ){
-                System.exit()
+                System.exit(0)
             }
 
             def vecWord = wordDictionary.get(word)
