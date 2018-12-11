@@ -30,4 +30,38 @@ iPhone
 - AppStore (score: 0.8226029096545175)
 ```
 
-It's top 10 similarity words with the word __iPhone__.
+You can get top 10 similarity words for __iPhone__.
+
+
+## Using this code from groovy script
+
+At first, publishing local maven repository.
+
+```
+./gradlew publishMavenPublicationToMavenLocal
+```
+
+And then, run this groovy script.
+
+```
+@GrabResolver(name='local', root='file://~/.m2/repository')
+@Grab(group='jp.osima.app.ml', module='wevr', version='0.1.0-SNAPSHOT')
+
+import jp.osima.app.ml.wevr.WordDictionaryFactory
+
+def gzippedVectorsTxtFile = new File('jawiki.word_vectors.100d.txt.gz')
+def cacheFile = new File('cache.mdb')
+
+def wordDictionary = WordDictionaryFactory.createWordDictionary(gzippedVectorsTxtFile, cacheFile)
+if( wordDictionary!=null ){
+    def words = ['iPhone', 'Android']
+    words.each { word->
+        def vecWord = wordDictionary.get( word )
+        println "$vecWord.word : $vecWord.vector"
+    }
+}
+```
+
+You can get __iPhone__ and __Android__ vector values.
+Do not forget copy the file jawiki.word\_vectors.100d.txt.gz in the same directory.
+
